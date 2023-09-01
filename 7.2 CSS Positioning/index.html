@@ -8,12 +8,103 @@
   </style>
 </head>
 
-<body>
-  <div class="blue-box">
-    <div class="red-circle">
-    </div>
-  </div>
+<!-- 
+display _.
+block
+inline
+inline-block
+none
+flex
+grid
+ -->
 
+ <!-- 
+position _> 
+
+static
+relative
+absolute 
+  -->
+
+  <style>
+    body{
+      margin: 0;
+    }
+    .blue-box{
+      background-color: rgba(0, 0, 255, 0.37);
+      height: 300px;
+      width: 500px;
+      position: relative;
+      /* top: 50px;
+      left: 50px; */
+    }
+    .red-box1{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+      border: 2px solid black;
+      position: absolute;
+      top:10px;
+      left: 10px;
+text-align: center;
+z-index: 1;
+    }
+    .red-box2{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+      border: 2px solid black;
+      position: absolute;
+      top:100px;
+      left: 100px;
+      text-align: center;
+      z-index: 0;
+    }
+
+    .line{
+      width: 150px;
+      background-color: black;
+      height: 5px;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    z-index: 10;
+    transform: rotate(40deg);
+    }
+    .triangle
+    {
+    margin-left: 10px;
+    margin-top: 10px;
+      background-color: transparent;
+     width:100px;
+     height: 100px;
+     border-left: 200px solid red;
+     border-right: 200px solid transparent;
+     border-top: 200px solid transparent;
+     border-bottom: 200px solid transparent;
+
+     
+
+    }
+
+  </style>
+<body>
+  <h1>Lorem ipsum dolor sit amet.</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eum quasi possimus cumque, recusandae repellat consectetur ut. Magni asperiores, vel et iusto deleniti iure vero beatae! Blanditiis, vel! Numquam, quod!</p>
+  <div class="blue-box">
+
+       <div class="red-box1">
+        a
+       </div>
+       <div class="red-box2">
+        b
+      </div>
+      <div class="line"></div>
+      
+  </div>
+  <div class="triangle"></div>
 </body>
 
 </html>
